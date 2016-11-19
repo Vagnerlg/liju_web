@@ -1,0 +1,29 @@
+<div mdl class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs mdl-layout--fixed-drawer">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<span class="mdl-layout-title">Liju - Vade mecum</span>
+		</div>
+		<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+			<a href="#fixed-tab-1" class="mdl-layout__tab is-active">Últimas leis inseridas</a>
+			<a href="#fixed-tab-2" class="mdl-layout__tab">Leis</a>
+		</div>
+	</header>
+	<div class="mdl-layout__drawer">
+		<span class="mdl-layout-title">
+         Menu lateral
+      </span>
+	</div>
+	<main class="mdl-layout__content">
+		<section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+			<div class="page-content">
+				<novidade></novidade>
+			</div>
+		</section>
+		<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+			<div class="page-content">
+				<info-lei [itensLei]="itensLei"></info-lei>
+			</div>
+		</section>
+	</main>
+
+</div>

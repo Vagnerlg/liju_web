@@ -1,0 +1,7 @@
+<div class="mdl-grid">
+	<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--5-col-tablet info-lei {{item.tipo}}" *ngFor="let item of itensLei">
+      <h2>{{item.numero | numberPointer}}/{{item.ano | slice:2:4}}</h2>
+      <div class="type-lei">{{item.tipo | typeLei}}</div>
+      <p>{{item.descricao | textLimit: 150}}</p>
+	</div>
+</div>

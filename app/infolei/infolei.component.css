@@ -1,0 +1,29 @@
+.info-lei{
+   background-color: #fff;
+   margin: 5px 15px;
+   padding: 15px;
+   box-shadow: 1px 1px 5px #999;
+}
+h2{
+   font-style: italic;
+   color:#ccc;
+   margin: 0px;
+   padding: 0px;
+   text-align: right;
+}
+.type-lei{
+   text-align: right;
+   font-family: 1.2em;
+}
+.d{
+   background-color: rebeccapurple;
+   color:#fff;
+}
+.lo{
+   background-color: lightslategrey;
+   color:#fff;
+}
+.lc{
+   background-color: darkblue;
+   color:#fff;
+}
