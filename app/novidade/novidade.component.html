@@ -1,6 +1,7 @@
-<div class="mdl-grid" style="padding:10px 0px">
-<div style="padding:15px 0px;margin:0px"class="mdl-cell mdl-cell--6-col" *ngFor="let novidade of novidades">
-   <div class="mdl-card  mdl-shadow--4dp mdl-card--border;"
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-phone mdl-cell--4-col-tablet mdl-cell--4-col-desktop" 
+     *ngFor="let novidade of novidades">
+   <div class="mdl-shadow--4dp"
         [ngStyle]="{'background-color':novidade.background,'color':novidade.color,'padding':'15px','margin':'auto'}">
       <div style="text-align:center">
          <i class="material-icons" style="font-size:75px;transform: rotate(-10deg);">{{novidade.icon}}</i>
