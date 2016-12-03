@@ -1,19 +1,18 @@
-<div class="mdl-grid" style="padding:10px 0px">
-<div style="padding:15px 0px;margin:0px"class="mdl-cell mdl-cell--6-col" *ngFor="let novidade of novidades">
-   <div class="mdl-card  mdl-shadow--4dp mdl-card--border;"
-        [ngStyle]="{'background-color':novidade.background,'color':novidade.color,'padding':'15px','margin':'auto'}">
-      <div style="text-align:center">
-         <i class="material-icons" style="font-size:75px;transform: rotate(-10deg);">{{novidade.icon}}</i>
-      </div>
-      <h3 style="margin:0px">
-         {{novidade.titulo}}
-      </h3>
-      <h6 style="margin:0px">
-         {{novidade.subtitulo}}
-      </h6>
-      <div [ngStyle]="{'color':'novidade.color','font-size':'0.8em','margin-top':'15px'}">
-         {{novidade.descricao}}
-      </div>
-   </div>
-</div>
+<div class="mdl-grid mdl-cell--2-offset-desktop">
+    <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-phone mdl-cell--4-col-tablet mdl-cell--5-col-desktop" *ngFor="let novidade of novidades">
+        <div class="mdl-shadow--4dp" [ngStyle]="{'background-color':novidade.background,'color':novidade.color,'padding':'15px','margin':'auto'}">
+            <div style="text-align:center">
+                <i class="material-icons" style="font-size:75px;transform: rotate(-10deg);">{{novidade.icon}}</i>
+            </div>
+            <h3 style="margin:0px">
+                {{novidade.titulo}}
+            </h3>
+            <h6 style="margin:0px">
+                {{novidade.subtitulo}}
+            </h6>
+            <div [ngStyle]="{'color':'novidade.color','font-size':'0.8em','margin-top':'15px'}">
+                {{novidade.descricao}}
+            </div>
+        </div>
+    </div>
 </div>

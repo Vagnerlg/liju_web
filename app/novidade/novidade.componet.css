@@ -1,4 +1,11 @@
+.mdl-grid{
+   padding: 15px;
+}
+.mdl-cell{
+
+}
 .mdl-card{
-   width: 320px;
+   width: 100%!important;
+   margin: auto;
    background-image: url('../src/img/60-lines.png');
 }

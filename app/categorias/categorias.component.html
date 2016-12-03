@@ -1,0 +1,15 @@
+<div class="mdl-grid">
+    <ul class="demo-list-three mdl-list" style="margin:auto">
+        <li class="mdl-list__item mdl-list__item--three-line" *ngFor="let categoria of categorias" ng-style="{'color':categoria.color,'background-color':categoria.background}">
+            <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon" style="font-size:2.5em">{{categoria.icon}}</i>
+                  <span>
+                    {{categoria.nome}}
+                  </span>
+            <span class="mdl-list__item-text-body">
+                    {{categoria.descricao}}
+                  </span>
+            </span>
+        </li>
+    </ul>
+</div>

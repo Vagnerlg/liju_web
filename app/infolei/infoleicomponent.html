@@ -1,7 +1,15 @@
 <div class="mdl-grid">
-	<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--5-col-tablet info-lei {{item.tipo}}" *ngFor="let item of itensLei">
-      <h2>{{item.numero | numberPointer}}/{{item.ano | slice:2:4}}</h2>
-      <div class="type-lei">{{item.tipo | typeLei}}</div>
-      <p>{{item.descricao | textLimit: 150}}</p>
-	</div>
+    <ul class="demo-list-three mdl-list">
+        <li class="mdl-list__item mdl-list__item--three-line" *ngFor="let item of itensLei">
+            <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar {{item.tipo}}">person</i>
+                  <span class="{{item.tipo}}">
+                        {{item.numero | numberPointer}}/{{item.ano | slice:2:4}} {{item.tipo | typeLei}}
+                  </span>
+            <span class="mdl-list__item-text-body">
+                        {{item.descricao | textLimit: 150}}
+                  </span>
+            </span>
+        </li>
+    </ul>
 </div>
